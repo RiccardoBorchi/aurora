@@ -1,0 +1,2 @@
+# aurora
+WordPress Theme
