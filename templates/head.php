@@ -11,6 +11,11 @@
   <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
   <style>
 
+  .banner {
+    padding: 10px 20px;
+    box-shadow: 1px 1px 1px #CCC;
+  }
+  
   .section-1{
     <?php echo ot_get_option ( 'section_1', '' ); ?>
   }
@@ -39,22 +44,19 @@
     <?php echo ot_get_option ( 'section_9', '' ); ?>
   }
 
-body {
-  background-color: <?php echo ot_get_option ( 'custom_background_css', '#fff' ); ?>;
+  body {
+    background-color: <?php echo ot_get_option ( 'custom_background_css', '#fff' ); ?>;
   }
-
 
   .wpcf7-form input {
     border:1px solid <?php echo ot_get_option ( 'contact_form_css', '#e93694' ); ?>;
   }
 
-
   .wpcf7-form textarea {
     border:1px solid <?php echo ot_get_option ( 'contact_form_css', '#e93694' ); ?>;
   }
 
-footer {
-
+  footer {
     background-color: <?php echo ot_get_option ( 'footer_color', '#e93694' ); ?>;
   }
 
@@ -73,7 +75,6 @@ footer {
   }
 
   .content-103 .service-icon {
-
     border: 2px solid <?php echo ot_get_option ( 'icon_color', '#eb7a5c' ); ?>;
   }
 
@@ -83,6 +84,7 @@ footer {
       -10px 0 0 <?php echo ot_get_option ( 'hedline_color', '#a979b7' ); ?>;
     background: <?php echo ot_get_option ( 'hedline_color', '#a979b7' ); ?>;
     color: <?php echo ot_get_option ( 'color_text_home_h1', '#fff' ); ?>;
+    padding-bottom: 5px;
   }
 
   <?php if($font) :?>

@@ -5,6 +5,7 @@
     @include make-col($main-sm-columns);
     .sidebar-primary & {
       @include make-col($main-sm-columns - $sidebar-sm-columns);
+      padding-right: 30px;
     }
   }
 }
@@ -14,6 +15,3 @@
     @include make-col($sidebar-sm-columns);
   }
 }
-
-
-

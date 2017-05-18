@@ -1,4 +1,19 @@
+.wrap {
+  margin: 30px auto;
+}
 
+.page-header h1 {
+  padding: 20px 10px;
+}
+
+a {
+  transition: 0.2s ease-out;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: $color-hover;
+}
 
 /** MEDIA QUERIES  **/
 @media only screen and (min-width: 768px), only screen and (min-height: 630px)
@@ -134,9 +149,12 @@ footer {
     margin-top: 50px;
 }
 
-body{
-    font-family: 'Lato', sans-serif;
-    color: #33393d;
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $color-text;;
 }
 
 .white-text {
@@ -145,7 +163,7 @@ body{
 
 }
 .logo {
-	max-width: 280px;
+  max-height: 70px;
 }
 
 a {
@@ -241,7 +259,7 @@ $color-stack:
   }
 }
 
-$b-height: 60px; //Height (and width) of the burger menu
+$b-height: 70px; //Height (and width) of the burger menu
 $b-margin-top: 30px; //Burger menu margin (distance from top)
 $b-margin-left: 30px; //Burger menu margin (distance from left)
 $b-border-width: 2px; //Width of the borders and 'buns'
@@ -303,15 +321,39 @@ body {
     width: 100%;
   }
 
+  &.open {
+    overflow: hidden;
+  }
 
   &.open:after {
     content: '';
     opacity: 1;
     visibility: visible;
   }
+
+  &.open > :not(.banner) {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &.open .banner {
+    padding: 0;
+  }
+
+  &.open .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  &.open .container .row {
+    margin: 0;
+  }
 }
 
 .b-nav {
+  width: 100%;
   position: absolute;
   z-index: 11;
 
@@ -320,7 +362,6 @@ body {
   }
 
   li {
-    color: color(complement);
     list-style-type: none;
     padding: 10px;
     text-align: left;
@@ -334,13 +375,29 @@ body {
   }
 
   li:first-child {
-    padding-top: $b-txt-pad-top;
+    margin-top: $b-txt-pad-top;
+  }
+
+  li a {
+    display: block;
+    color: $color-text;
+    transition: none;
+  }
+
+  li:hover {
+    background-color: $brand-primary;
+    color: $color-hover;
+  }
+
+  li:hover a, li a:hover {
+    color: $brand-secondary;
   }
 
   &.open {
     visibility: visible;
 
     li {
+      font-size: 50px;
       animation-duration: $b-trans-speed;
       animation-fill-mode: both;
       animation-name: slideInLeft;
@@ -432,11 +489,10 @@ body {
 
 
 .b-container {
-    text-align: right;
+  text-align: right;
   height: $b-height;
   right: $b-margin-left;
   position: absolute;
-  top: $b-margin-top;
 
   &:hover:not(.open) {
     .bun-top,
@@ -483,6 +539,7 @@ h1 span {
   color: #fff;
   font-weight: 300;
   font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
   }
 
 
@@ -606,7 +663,7 @@ footer { background-color:#e93694; min-height:350px; font-family: 'Lato', sans-s
 .paddingtop-bottom {  margin-top:50px;}
 .footer-ul { list-style-type:none;  padding-left:0px; margin-left:2px;}
 .footer-ul li { line-height:29px; font-size:14px;}
-.footer-ul li a { color:#a0a3a4; transition: color 0.2s linear 0s, background 0.2s linear 0s; }
+.footer-ul li a { color: #CCC; transition: color 0.2s linear 0s, background 0.2s linear 0s; }
 .footer-ul i { margin-right:10px;}
 .footer-ul li a:hover {transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#ff670f; }
 
@@ -627,8 +684,8 @@ footer { background-color:#e93694; min-height:350px; font-family: 'Lato', sans-s
  .copyright { min-height:40px; background-color:#000000;}
  .copyright p { text-align:left; color:#FFF; padding:10px 0; margin-bottom:0px;}
  .heading7 { font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;}
- .post p { font-size:14px;  line-height:20px;}
- .post p span { display:block; color:#8f8f8f;}
+ .post p { color: #FFF; font-size:14px;  line-height:20px;}
+ .post p span { display:block; color:#CCC;}
  .bottom_ul { list-style-type:none; float:right; margin-bottom:0px;}
  .bottom_ul li { float:left; line-height:40px;}
  .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}

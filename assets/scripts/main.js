@@ -369,7 +369,7 @@
           })();
 
 if($('body.page-template-template-landing').length >0){
-  alert('antani')
+  //alert('antani')
 }
 $('.counter').each(function() {
   var $this = $(this),

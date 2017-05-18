@@ -1,17 +1,20 @@
 <?php
+
 /**
  * Template Name: Landing Template
  */
+
 $families = array(
-      'arial'     => 'Arial',
-      'georgia'   => 'Georgia',
-      'helvetica' => 'Helvetica',
-      'palatino'  => 'Palatino',
-      'tahoma'    => 'Tahoma',
-      'times'     => '"Times New Roman", sans-serif',
-      'trebuchet' => 'Trebuchet',
-      'verdana'   => 'Verdana'
-    );
+	'arial'     => 'Arial',
+	'georgia'   => 'Georgia',
+	'helvetica' => 'Helvetica',
+	'palatino'  => 'Palatino',
+	'tahoma'    => 'Tahoma',
+	'times'     => '"Times New Roman", sans-serif',
+	'trebuchet' => 'Trebuchet',
+	'verdana'   => 'Verdana'
+);
+
 $font = ot_get_option ( 'font_body', '' );
 $font_h1 = ot_get_option ( 'font_h1', '' );
 $font_h2 = ot_get_option ( 'font_h2', '' );
@@ -19,7 +22,9 @@ $font_h3 = ot_get_option ( 'font_h3', '' );
 $font_h4 = ot_get_option ( 'font_h4', '' );
 $font_h5 = ot_get_option ( 'font_h5', '' );
 $ot_google_fonts = get_theme_mod( 'ot_google_fonts', array() );
+
 ?>
+
 <style type="text/css">
 
 	body {
@@ -260,11 +265,10 @@ $ot_google_fonts = get_theme_mod( 'ot_google_fonts', array() );
 	<p><?php echo ot_get_option ( 'text_contact', ' Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam' )?></p>
 	    <p><i class="fa fa-map-pin"></i><?php echo ot_get_option ( 'street_contact', '221B Baker Street, London' )?></p>
         <p><i class="fa fa-phone"></i><?php echo ot_get_option ( 'phone_contact', 'Phone (US) : +91 9999 878 398' ); ?></p>
-        <p><?php if($mail_contact = ot_get_option ( 'mail_contact' ) ) :?><i class="fa fa-envelope"></i><?php echo $mail_contact; ?></p>
+        <p><?php if($mail_contact = ot_get_option ( 'mail_contact' ) ) :?><i class="fa fa-envelope"></i><?php echo $mail_contact; endif; ?></p>
 		</div>
 		<div class="col-md-6">
 		<?php echo do_shortcode( '[contact-form-7 id="66" title="Modulo di contatto 1"]' ); ?>
 		</div>
 	</div>
 </div>
-
