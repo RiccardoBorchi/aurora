@@ -28,41 +28,29 @@ $ot_google_fonts = get_theme_mod( 'ot_google_fonts', array() );
 <style type="text/css">
 
 	body {
-	background-color: <?php echo ot_get_option ( 'custom_background_css', '#fff' ); ?>;
-	}
-
-
-	.wpcf7-form input {
-	  border:1px solid <?php echo ot_get_option ( 'contact_form_css', '#e93694' ); ?>;
-	}
-
-
-	.wpcf7-form textarea {
-	  border:1px solid <?php echo ot_get_option ( 'contact_form_css', '#e93694' ); ?>;
+		background-color: <?php echo ot_get_option ( 'custom_background_css', '#fff' ); ?>;
 	}
 
 	footer {
-
 		background-color: <?php echo ot_get_option ( 'footer_color', '#e93694' ); ?>;
 	}
 
 	.service-post {
-    color: <?php echo ot_get_option ( 'color_text_services', '#fff' ); ?>;
-    background-color: <?php echo ot_get_option ( 'color_background_services', 'a979b7' ); ?>;
+	    color: <?php echo ot_get_option ( 'color_text_services', '#fff' ); ?>;
+	    background-color: <?php echo ot_get_option ( 'color_background_services', 'a979b7' ); ?>;
 	}
 
 	.content-103 .service-hover {
-	  background: <?php echo ot_get_option ( 'hover_service', '#eb7a5c' ); ?>;
+  		background: <?php echo ot_get_option ( 'hover_service', '#eb7a5c' ); ?>;
 	}
 
 	.content-103 .service-icon i {
-	  font-size: 18px;
-	  color: <?php echo ot_get_option ( 'icon_color', '#eb7a5c' ); ?> !important;
+		font-size: 18px;
+		color: <?php echo ot_get_option ( 'icon_color', '#eb7a5c' ); ?> !important;
 	}
 
 	.content-103 .service-icon {
-
-    border: 2px solid <?php echo ot_get_option ( 'icon_color', '#eb7a5c' ); ?>;
+    	border: 2px solid <?php echo ot_get_option ( 'icon_color', '#eb7a5c' ); ?>;
 	}
 
 	h1 span {
@@ -169,7 +157,7 @@ $ot_google_fonts = get_theme_mod( 'ot_google_fonts', array() );
 					<a class="white-text" href="<?php echo get_page_link(ot_get_option('link_left', '#')); ?>">
 					<div class="service-content">
 						<div class="service-icon">
-								<i class="fa fa-share-alt"></i>
+							<i class="fa fa-share-alt"></i>
 						</div> <!-- service-icon -->
 						<h3 class="service-title"><?php echo ot_get_option ( 'h1_left', 'Advertising' )?></h3>
 						<p class="service-description"><?php echo ot_get_option ( 'h2_left', 'Lorem Ipsum' )?></p>
@@ -182,7 +170,7 @@ $ot_google_fonts = get_theme_mod( 'ot_google_fonts', array() );
 					<a class="white-text" href="<?php echo get_page_link(ot_get_option('link_center', '#')); ?>">
 					<div class="service-content">
 						<div class="service-icon">
-								<i class="fa fa-pencil"></i>
+							<i class="fa fa-pencil"></i>
 						</div> <!-- .s-icon -->
 						<h3 class="service-title"><?php echo ot_get_option ( 'h1_center', 'Branding Design' )?></h3>
 						<p class="service-description"><?php echo ot_get_option ( 'h2_center', 'Lorem Ipsum' )?></p>
@@ -195,7 +183,7 @@ $ot_google_fonts = get_theme_mod( 'ot_google_fonts', array() );
 					<a class="white-text" href="<?php echo get_page_link(ot_get_option('link_right', '#' )); ?>">
 					<div class="service-content">
 						<div class="service-icon">
-								<i class="fa fa-lightbulb-o"></i>
+							<i class="fa fa-lightbulb-o"></i>
 						</div> <!-- .s-icon -->
 						<h3 class="service-title"><?php echo ot_get_option ( 'h1_right', 'Creative Marketing' )?></h3>
 						<p class="service-description"><?php echo ot_get_option ( 'h2_right', 'Lorem Ipsum' )?></p>
@@ -206,25 +194,25 @@ $ot_google_fonts = get_theme_mod( 'ot_google_fonts', array() );
 		</div>
 	</div>
 </div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<div class="counter" data-count="<?php echo ot_get_option ( 'ore_1', '150' )?>">0</div>
-				<h4 style="text-align: center;"><?php echo ot_get_option ( 'coffe_1', 'Work hours' )?></h4>
-			</div>
-			<div class="col-md-4">
-				<div class="counter" data-count="<?php echo ot_get_option ( 'ore_2', '20' )?>">0</div>
-				<h4 style="text-align: center;"><?php echo ot_get_option ( 'coffe_2', 'Projects in progress' )?></h4>
-			</div>
-			<div class="col-md-4">
-				<div class="counter" data-count="<?php echo ot_get_option ( 'ore_3', '190' )?>">0</div>
-				<h4 style="text-align: center;"><?php echo ot_get_option ( 'coffe_3', 'Drinking coffee' )?></h4>
-			</div>
-			</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="counter" data-count="<?php echo ot_get_option ( 'ore_1', '150' )?>">0</div>
+			<h4 style="text-align: center;"><?php echo ot_get_option ( 'coffe_1', 'Work hours' )?></h4>
+		</div>
+		<div class="col-md-4">
+			<div class="counter" data-count="<?php echo ot_get_option ( 'ore_2', '20' )?>">0</div>
+			<h4 style="text-align: center;"><?php echo ot_get_option ( 'coffe_2', 'Projects in progress' )?></h4>
+		</div>
+		<div class="col-md-4">
+			<div class="counter" data-count="<?php echo ot_get_option ( 'ore_3', '190' )?>">0</div>
+			<h4 style="text-align: center;"><?php echo ot_get_option ( 'coffe_3', 'Drinking coffee' )?></h4>
+		</div>
 		</div>
 	</div>
+</div>
 
-	<!-- Begin MailChimp Signup Form -->
+<!-- Begin MailChimp Signup Form -->
 <div style="padding-top: 20px; padding-bottom: 20px; margin-top: 44px;" class="container container-2">
 	<div class="row">
 		<div style="text-align: right;" class="col-md-4">
@@ -246,17 +234,9 @@ $ot_google_fonts = get_theme_mod( 'ot_google_fonts', array() );
 	</div>
 </div>
 
-
 <!--End mc_embed_signup-->
-  <?php get_template_part('templates/content', 'page'); ?>
+<?php get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>
-
-<div style="margin-top: 40px;" class="container">
-	<div class="row">
-	<?php echo do_shortcode("[recent]"); ?>
-	</div>
-</div>
-
 
 <div style="margin-top: 40px;" class="container">
 	<div class="row">

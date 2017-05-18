@@ -1,17 +1,19 @@
 <?php
+
 /**
  * Template Name: Home Template
  */
+
 $families = array(
-      'arial'     => 'Arial',
-      'georgia'   => 'Georgia',
-      'helvetica' => 'Helvetica',
-      'palatino'  => 'Palatino',
-      'tahoma'    => 'Tahoma',
-      'times'     => '"Times New Roman", sans-serif',
-      'trebuchet' => 'Trebuchet',
-      'verdana'   => 'Verdana'
-    );
+  'arial'     => 'Arial',
+  'georgia'   => 'Georgia',
+  'helvetica' => 'Helvetica',
+  'palatino'  => 'Palatino',
+  'tahoma'    => 'Tahoma',
+  'times'     => '"Times New Roman", sans-serif',
+  'trebuchet' => 'Trebuchet',
+  'verdana'   => 'Verdana'
+);
 
 $font = ot_get_option ( 'font_body' );
 for($i=1;$i<=6;$i++){

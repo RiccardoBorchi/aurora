@@ -1,8 +1,11 @@
 <?php
+
 /**
  * Template Name: Contact Template
  */
+
 ?>
+
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
@@ -20,7 +23,7 @@
 		</div>
 
 		<div class="col-md-6">
-<?php echo do_shortcode( '[contact-form-7 id="66" title="Modulo di contatto 1"]' ); ?>
+			<?php echo do_shortcode( '[contact-form-7 id="66" title="Modulo di contatto 1"]' ); ?>
 		</div>
 	</div>
 </div>

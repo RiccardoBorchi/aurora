@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Sage includes
  *
@@ -9,6 +10,7 @@
  *
  * @link https://github.com/roots/sage/pull/1042
  */
+
 $sage_includes = [
   'lib/assets.php',    // Scripts and stylesheets
   'lib/extras.php',    // Custom functions

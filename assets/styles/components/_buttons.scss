@@ -89,17 +89,6 @@ button.btn-floating {
   margin-left: 7px;
 }
 
-.btn-default {
-  color: #fff;
-  background-color: #2BBBAD;
-}
-
-.btn-default:hover,
-.btn-default:focus {
-  background-color: #30cfc0 !important;
-  color: #fff !important;
-}
-
 .btn-link {
   background-color: transparent;
   color: #000;
@@ -369,4 +358,23 @@ a.waves-effect .waves-ripple {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+}
+
+.btn, .btn-default, .btn-floating, .comment-form input[type=submit], .search-form .search-submit, .z-depth-1 {
+  font-family: $font-family;
+  border-radius: 0;
+  border: 1px solid $brand-primary;
+  line-height: 1;
+  padding: 10px 30px;
+  box-shadow: none;
+  margin: 10px 0;
+  color: $color-text;
+  background-color: transparent;
+}
+
+.btn:hover, .btn-default:hover, .btn-floating:hover, .comment-form input[type=submit]:hover, .search-form .search-submit:hover, .z-depth-1:hover {
+  box-shadow: none;
+  border-color: $brand-primary;
+  background-color: $brand-primary;
+  color: $brand-secondary;
 }

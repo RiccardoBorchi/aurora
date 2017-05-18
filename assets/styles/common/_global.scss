@@ -15,28 +15,21 @@ a:hover, a:focus {
   color: $color-hover;
 }
 
+.comments {
+  margin-top: 30px;
+}
+
 /** MEDIA QUERIES  **/
 @media only screen and (min-width: 768px), only screen and (min-height: 630px)
 {
-
-  .menu-item{
-    margin-left: -45px;
-  }
-
   h1 span {
   font-size: 55px;
   line-height: 93px;
   }
-
-
 }
 
 @media only screen and (max-width: 768px), only screen and (max-height: 630px)
 {
-  .menu-item{
-    margin-left: -60px;
-  }
-
   h1 span {
   font-size: 53px;
   line-height: 86px;
@@ -45,15 +38,10 @@ a:hover, a:focus {
   .subscribe-text {
     text-align: center;
   }
-
 }
 
 @media only screen and (max-width: 600px), only screen and (max-height: 500px)
 {
-.menu-item{
-    margin-left: -60px;
-  }
-
   h1 span {
   font-size: 43px;
   line-height: 72px;
@@ -62,16 +50,11 @@ a:hover, a:focus {
   .hide-mobile {
   display: none;
   }
-
 }
 
 
 @media only screen and (max-width: 480px), only screen and (max-height: 410px)
 {
-.menu-item{
-    margin-left: 83px;
-  }
-
   h1 span {
     font-size: 33px;
     line-height: 65px;
@@ -85,15 +68,10 @@ a:hover, a:focus {
 
 @media only screen and (max-width: 400px), only screen and (max-height: 310px)
 {
-.menu-item{
-    margin-left: 58px;
-  }
-
   h1 span {
     font-size: 30px;
     line-height: 53px;
   }
-
 }
 
 @media only screen and (max-width: 355px) ,only screen and (max-height: 280px)
@@ -101,32 +79,26 @@ a:hover, a:focus {
   span.text-content {
     min-height: 188px;
     min-width: 285px;
-
-}
-
-  .menu-item{
-      margin-left: 36px;
-    }
+  }
 
   h1 span {
     font-size: 25px;
     line-height: 51px;
   }
-
 }
 
-  .widget {
-     margin-top: 30px;
-  }
+.widget {
+   margin-top: 30px;
+}
 
-  .subscribe-text {
-    color: #fff;
-    margin-top: auto !important;
-  }
+.subscribe-text {
+  color: #fff;
+  margin-top: auto !important;
+}
 
-  figure {
-    margin: auto !important;
-  }
+figure {
+  margin: auto !important;
+}
 
 
 #mc_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; width:100%; text-align: left;}
@@ -140,9 +112,8 @@ a:hover, a:focus {
     background-color: rgba(130,47,140,.59);
 }
 
-
 b {
-font-weight: 1000;
+  font-weight: 1000;
 }
 
 footer {
@@ -158,10 +129,10 @@ body {
 }
 
 .white-text {
-        color: #fff;
-    text-decoration: none !important;
-
+  color: #fff;
+  text-decoration: none !important;
 }
+
 .logo {
   max-height: 70px;
 }
@@ -169,6 +140,7 @@ body {
 a {
     text-decoration:none;
 }
+
 ul {
     margin:0px;
 }
@@ -359,6 +331,10 @@ body {
 
   &:not(.open) {
     visibility: hidden;
+  }
+
+  ul {
+    padding-left: 0;
   }
 
   li {
@@ -673,9 +649,6 @@ footer { background-color:#e93694; min-height:350px; font-family: 'Lato', sans-s
      -o-transform: scale(1.1);
  }
 
-
-
-
  .icon-ul { list-style-type:none !important; margin:0px; padding:0px;}
  .icon-ul li { line-height:75px; width:100%; float:left;}
  .icon { float:left; margin-right:5px;}
@@ -684,8 +657,10 @@ footer { background-color:#e93694; min-height:350px; font-family: 'Lato', sans-s
  .copyright { min-height:40px; background-color:#000000;}
  .copyright p { text-align:left; color:#FFF; padding:10px 0; margin-bottom:0px;}
  .heading7 { font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;}
- .post p { color: #FFF; font-size:14px;  line-height:20px;}
+ .post h1 { padding: 20px 0; }
+ .post p { font-size:14px;  line-height:20px;}
  .post p span { display:block; color:#CCC;}
+ footer .post p { color: #FFF; }
  .bottom_ul { list-style-type:none; float:right; margin-bottom:0px;}
  .bottom_ul li { float:left; line-height:40px;}
  .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
@@ -755,46 +730,6 @@ i {
   margin-top: -10px;
   text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
   transform: translate(0, -8);
-}
-
-//contatti
-.wpcf7-form {
-  background:#fff;
-  margin-bottom:30px;
-}
-
-.wpcf7-form input {
-
-  background:#fff;
-  padding:5px 7px;
-  border:1px solid #e93694;
-  margin-bottom:8px;
-  border-radius:7px;
-}
-
-
-.wpcf7-form textarea {
-  width: 100%;
-  max-height: 160px;
-  height: 50%;
-  background:#fff;
-  padding:5px 0px 5px 7px;
-  border:1px solid #e93694;
-  border-radius:7px;
-}
-
-.wpcf7-form p {
-  color: black;
-  margin-top:10px;
-}
-
-.wpcf7-form .wpcf7-submit {
-  background:#fff;
-  cursor:pointer;
-  padding-left:15px;
-  padding-right:15px;
-  color: black;
-  border-radius:7px;
 }
 
 // 3d carousel

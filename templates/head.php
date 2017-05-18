@@ -48,14 +48,6 @@
     background-color: <?php echo ot_get_option ( 'custom_background_css', '#fff' ); ?>;
   }
 
-  .wpcf7-form input {
-    border:1px solid <?php echo ot_get_option ( 'contact_form_css', '#e93694' ); ?>;
-  }
-
-  .wpcf7-form textarea {
-    border:1px solid <?php echo ot_get_option ( 'contact_form_css', '#e93694' ); ?>;
-  }
-
   footer {
     background-color: <?php echo ot_get_option ( 'footer_color', '#e93694' ); ?>;
   }

@@ -14,26 +14,28 @@
   @extend .btn-secondary;
 }
 
+.comment-form input[type=email], .comment-form input[type=text], .comment-form input[type=url], .comment-form textarea, .form-control {
+	border-radius: 0;
+	border: 3px solid rgba(0,0,0,0.1);
+	color: $color-text;
+	line-height: 1;
+	padding: 15px 20px;
+}
+
+.search-form .search-submit {
+	margin-left: 10px;
+	padding: 10px 15px;
+}
+
 .search-form .search-field {
 	border-radius: 0;
 	border: 3px solid rgba(0,0,0,0.1);
 	color: $color-text;
 	line-height: 1;
 	padding: 7px 20px;
+	max-width: 200px;
 }
 
-.search-form .search-submit {
-	font-family: $font-family;
-	border-radius: 0;
-	border: 1px solid $brand-primary;
-	line-height: 1;
-	padding: 10px 20px;
-	box-shadow: none;
-}
-
-.search-form .search-submit:hover {
-	box-shadow: none;
+.comment-form input[type=email]:focus, .comment-form input[type=text]:focus, .comment-form input[type=url]:focus, .comment-form textarea:focus, .form-control:focus, .search-form .search-field:focus {
 	border-color: $brand-primary;
-	background-color: $brand-primary;
-	color: $brand-secondary;
 }
